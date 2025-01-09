@@ -18,11 +18,11 @@ public class App
         String nombre = sc.next();
         System.out.println();
         DNI dni = new DNI(DNI, nombre);
-        if(dni.validacion() == true) {
+        if(dni.validacion(DNI) == true) {
         	System.out.println("Su DNI ha sido validado y es correcto: " + DNI);
         }else {
         	System.out.println("Su DNI ha sido validado y es incorrecto: " + DNI);
         }
-        
+        System.out.println("validar");
     }
 }
